@@ -1,35 +1,4 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Black.eot");
-    src: local("☺"), url("fonts/Montserrat-Black.woff") format("woff"), url("fonts/Montserrat-Black.ttf") format("truetype"), url("fonts/Montserrat-Black.svg") format("svg");
-    font-weight: 900;
-    font-style: normal
-  }
-  
-  @font-face {
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Bold.eot");
-    src: local("☺"), url("fonts/Montserrat-Bold.woff") format("woff"), url("fonts/Montserrat-Bold.ttf") format("truetype"), url("fonts/Montserrat-Bold.svg") format("svg");
-    font-weight: 700;
-    font-style: normal
-  }
-  
-  @font-face {
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Regular.eot");
-    src: local("☺"), url("fonts/Montserrat-Regular.woff") format("woff"), url("fonts/Montserrat-Regular.ttf") format("truetype"), url("fonts/Montserrat-Regular.svg") format("svg");
-    font-weight: 400;
-    font-style: normal
-  }
-  
-  @font-face {
-    font-family: 'Montserrat';
-    src: url("fonts/Montserrat-Light.eot");
-    src: local("☺"), url("fonts/Montserrat-Light.woff") format("woff"), url("fonts/Montserrat-Light.ttf") format("truetype"), url("fonts/Montserrat-Light.svg") format("svg");
-    font-weight: 300;
-    font-style: normal
-  }
-  
+
   /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
   html {
     font-family: sans-serif;
@@ -511,7 +480,9 @@
     margin: 0 0 0 10px;
     font-size: 16px;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
   }
   
   .header--nav-toggle {
@@ -569,12 +540,13 @@
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #0f33ff;
+    background-color: #8dd7f7;
     border: none;
     opacity: 0;
     visibility: hidden;
     -webkit-transition: opacity .4s ease-in-out, visibility 0s .4s;
-    transition: opacity .4s ease-in-out, visibility 0s .4s
+    transition: opacity .4s ease-in-out, visibility 0s .4s;
+    font-family: 'Roboto', sans-serif;
   }
   
   .header--cta:focus {
@@ -614,7 +586,7 @@
     margin: 0;
     padding: 0;
     list-style-position: inside;
-    z-index: 10
+    z-index: 10;
   }
   
   .side-nav>li {
@@ -622,7 +594,9 @@
     top: -5px;
     color: #fff;
     font-size: 6px;
-    cursor: pointer
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
   }
   
   .side-nav>li span {
@@ -633,7 +607,9 @@
     font-size: 14px;
     font-weight: 300;
     opacity: 0;
-    visibility: hidden
+    visibility: hidden;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
   }
   
   .side-nav>li::before {
@@ -666,7 +642,7 @@
   }
   
   .side-nav li.is-active {
-    color: #0f33ff;
+    color: #8dd7f7;
     -webkit-transition: color .4s ease-in-out;
     transition: color .4s ease-in-out
   }
@@ -732,15 +708,21 @@
     left: 0;
     width: 30px;
     height: 4px;
-    background-color: #0f33ff
+    background-color: #8dd7f7
   }
   
   .intro--banner h1 {
     position: relative;
     font-size: 68px;
-    font-weight: 900;
     line-height: 1;
-    z-index: 1
+    z-index: 1;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+  }
+
+  .intro--banner h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
   }
   
   .intro--banner button {
@@ -749,7 +731,8 @@
     font-weight: 700;
     text-transform: uppercase;
     background-color: transparent;
-    border: none
+    border: none;
+    font-family: 'Roboto', sans-serif;
   }
   
   .intro--banner button .btn-background {
@@ -758,7 +741,7 @@
     left: 23px;
     right: 0;
     height: 100%;
-    background-color: #0f33ff;
+    background-color: #8dd7f7;
     z-index: -1;
     -webkit-transition: left .2s ease-in-out;
     transition: left .2s ease-in-out
@@ -813,11 +796,14 @@
   
   .intro--options h3 {
     font-size: 16px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
   }
   
   .intro--options p {
-    margin-bottom: 0
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;
   }
   
   @media (max-width: 900px) {
@@ -933,7 +919,9 @@
   .work h2 {
     margin: 0 0 20px 0;
     font-size: 30px;
-    text-align: center
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
   }
   
   .work--lockup {
@@ -967,13 +955,15 @@
     margin-top: 10px;
     font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
   }
   
   .work--lockup .slider--item-description {
     display: none;
     max-width: 250px;
-    margin: 0 auto
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
   }
   
   .work--lockup .slider--item-image {
@@ -1156,7 +1146,7 @@
     left: 200px;
     -webkit-transform: rotate(-25deg);
     transform: rotate(-25deg);
-    border: 5px solid #0f33ff;
+    border: 5px solid #8dd7f7;
     border-right-color: transparent;
     border-bottom-color: transparent
   }
@@ -1170,7 +1160,7 @@
     transform: rotate(45deg);
     width: 10px;
     height: 10px;
-    background-color: #0f33ff
+    background-color: #8dd7f7
   }
   
   .about--banner h2 {
@@ -1189,7 +1179,7 @@
     left: 268px;
     width: 30px;
     height: 30px;
-    background-color: #0f33ff;
+    background-color: #8dd7f7;
     border-radius: 50%
   }
   
@@ -1200,7 +1190,7 @@
     left: 255px;
     width: 10px;
     height: 10px;
-    background-color: #0f33ff
+    background-color: #8dd7f7
   }
   
   .about--banner a {
@@ -1252,7 +1242,7 @@
     height: 75px;
     text-decoration: none;
     color: #fff;
-    border: 10px solid #0f33ff;
+    border: 10px solid #8dd7f7;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat
@@ -1416,11 +1406,13 @@
     margin: 14px 0;
     text-decoration: none;
     color: #fff;
-    font-weight: 700
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
   }
   
   .contact--lockup .modal--information p {
-    margin-top: 0
+    margin-top: 0;
+    font-family: 'Roboto', sans-serif;
   }
   
   .contact--lockup .modal--options {
@@ -1435,16 +1427,16 @@
   }
   
   .contact--lockup .modal--options li:nth-child(1) {
-    background-color: #1769ff
+    background-color: #1d1a1a
   }
   
   .contact--lockup .modal--options li:nth-child(2) {
-    background-color: #ea4c89
+    background-color: #053eff
   }
   
   .contact--lockup .modal--options li:nth-child(3) {
     margin-bottom: 0;
-    background-color: #0f33ff;
+    background-color: #0077b5;
     text-transform: uppercase
   }
   
@@ -1454,7 +1446,8 @@
     padding: 8px 0;
     text-decoration: none;
     color: #fff;
-    font-weight: 700
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
   }
   
   .hire {
@@ -1515,7 +1508,7 @@
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
-    background-color: #0f33ff;
+    background-color: #8dd7f7;
     border: none;
     border-radius: 0
   }
@@ -1596,8 +1589,8 @@
   }
   
   .work-request--options input[type="checkbox"]:checked+label {
-    background-color: #0f33ff;
-    border-color: #0f33ff
+    background-color: #8dd7f7;
+    border-color: #8dd7f7
   }
   
   .work-request--options input[type="checkbox"]:checked+label svg {
@@ -1731,7 +1724,7 @@
     -webkit-transform: translateZ(0) translateX(0) rotateY(0deg);
     transform: translateZ(0) translateX(0) rotateY(0deg);
     min-height: 100%;
-    outline: 30px solid #0f33ff;
+    outline: 30px solid #8dd7f7;
     -webkit-transition: -webkit-transform .4s;
     transition: -webkit-transform .4s;
     transition: transform .4s;
@@ -1759,7 +1752,7 @@
   .effect-rotate-left--animate .container {
     -webkit-transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
     transform: translateZ(-1800px) translateX(-50%) rotateY(45deg);
-    outline: 30px solid #0f33ff
+    outline: 30px solid #8dd7f7
   }
   
   .outer-nav {
@@ -1776,7 +1769,9 @@
     text-align: center;
     visibility: hidden;
     -webkit-transition: visibility 0s .2s;
-    transition: visibility 0s .2s
+    transition: visibility 0s .2s;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
   }
   
   .outer-nav.is-vis {
@@ -1833,7 +1828,7 @@
     width: 110%;
     height: 15px;
     opacity: 0;
-    background-color: #0f33ff
+    background-color: #8dd7f7
   }
   
   .outer-nav>li.is-active::before {
