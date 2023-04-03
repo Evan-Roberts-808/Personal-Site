@@ -1,178 +1,331 @@
 .work
   position: relative
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
   display: flex
   width: 960px
   max-width: 80%
   height: 100%
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
   flex-direction: column
+  -webkit-box-pack: center
+  -webkit-justify-content: center
+  -ms-flex-pack: center
   justify-content: center
   margin: 0 auto
-
-  @media (max-width: 1180px)
-    max-width: 100%
 
   h2
     margin: 0 0 20px 0
     font-size: 30px
     text-align: center
+    font-family: 'Roboto Slab', serif
+    font-weight: 700
 
-  &--lockup
+@media (max-width: 1180px)
+  .work
+    max-width: 100%
+
+.work--lockup
+  position: relative
+
+  .web-slider
     position: relative
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    width: 80%
+    margin: 0 auto
+    padding: 0
+    list-style: none
 
-    .slider
-      position: relative
-      display: flex
-      width: 80%
-      margin: 0 auto
-      padding: 0
-      list-style: none
+  .web-slider--item
+    position: absolute
+    display: none
+    text-align: center
 
-      &--item
-        position: absolute
-        display: none
-        text-align: center
+    a
+      text-decoration: none
+      color: #858585
 
-        a
-          text-decoration: none
-          color: #858585
+  .web-slider--item-title
+    margin-top: 10px
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    font-family: 'Roboto', sans-serif
 
-        &-title
-          margin-top: 10px
-          font-size: 12px
-          font-weight: 700
-          text-transform: uppercase
+  .web-slider--item-description
+    display: none
+    max-width: 250px
+    margin: 0 auto
+    font-family: 'Roboto', sans-serif
 
-        &-description
-          display: none
-          max-width: 250px
-          margin: 0 auto
+  .web-slider--item-image
+    width: 150px
+    height: 150px
+    margin: 0 auto
+    border-radius: 50%
+    overflow: hidden
 
-        &-image
-          width: 150px
-          height: 150px
-          margin: 0 auto
-          border-radius: 50%
-          overflow: hidden
+    img
+      width: 100%
 
-          img
-            width: 100%
+  .web-slider--item-left
+    top: 50%
+    left: 0
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    display: block
 
-        &-left
-          top: 50%
-          left: 0
-          transform: translateY(-50%)
-          display: block
+  .web-slider--item-right
+    top: 50%
+    right: 0
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    display: block
 
-        &-right
-          top: 50%
-          right: 0
-          transform: translateY(-50%)
-          display: block
+  .web-slider--item-center
+    position: relative
+    top: 30px
+    left: 50%
+    -webkit-transform: translateX(-50%)
+    transform: translateX(-50%)
+    display: block
 
-        &-center
-          position: relative
-          top: 30px
-          left: 50%
-          transform: translateX(-50%)
-          display: block
+    a
+      color: #fff
 
-          a
-            color: $white
+    .web-slider--item-title
+      margin-top: 25px
+      font-size: 16px
 
-          .slider--item-title
-            margin-top: 25px
-            font-size: 16px
+    .web-slider--item-description
+      display: block
 
-          .slider--item-description
-            display: block
+    .web-slider--item-image
+      width: 300px
+      height: 300px
 
-          .slider--item-image
-            width: 300px
-            height: 300px
+  .web-slider--next, .web-slider--prev
+    position: absolute
+    top: 160px
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    width: 50px
+    height: 50px
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -webkit-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+    background-color: #282828
+    border-radius: 50%
+    cursor: pointer
 
-    .slider--next,
-    .slider--prev
-      position: absolute
-      top: 160px
-      display: flex
-      width: 50px
-      height: 50px
-      align-items: center
-      justify-content: center
-      background-color: $muted-gray
-      border-radius: 50%
-      cursor: pointer
+  .web-slider--next svg, .web-slider--prev svg
+    width: 20px
+    fill: #fff
 
-      svg
-        width: 20px
-        fill: $white
+  .web-slider--next
+    right: 0
 
-    .slider--next
-      right: 0
+  .web-slider--prev
+    left: 0
 
-    .slider--prev
-      left: 0
+  .graphic-slider
+    position: relative
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    width: 80%
+    margin: 0 auto
+    padding: 0
+    list-style: none
+
+  .graphic-slider--item
+    position: absolute
+    display: none
+    text-align: center
+
+    a
+      text-decoration: none
+      color: #858585
+
+  .graphic-slider--item-title
+    margin-top: 10px
+    font-size: 12px
+    font-weight: 700
+    text-transform: uppercase
+    font-family: 'Roboto', sans-serif
+
+  .graphic-slider--item-description
+    display: none
+    max-width: 250px
+    margin: 0 auto
+    font-family: 'Roboto', sans-serif
+
+  .graphic-slider--item-image
+    width: 150px
+    height: 150px
+    margin: 0 auto
+    border-radius: 50%
+    overflow: hidden
+
+    img
+      width: 100%
+
+  .graphic-slider--item-left
+    top: 50%
+    left: 0
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    display: block
+
+  .graphic-slider--item-right
+    top: 50%
+    right: 0
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    display: block
+
+  .graphic-slider--item-center
+    position: relative
+    top: 30px
+    left: 50%
+    -webkit-transform: translateX(-50%)
+    transform: translateX(-50%)
+    display: block
+
+    a
+      color: #fff
+
+    .graphic-slider--item-title
+      margin-top: 25px
+      font-size: 16px
+
+    .graphic-slider--item-description
+      display: block
+
+    .graphic-slider--item-image
+      width: 300px
+      height: 300px
+
+  .graphic-slider--next, .graphic-slider--prev
+    position: absolute
+    top: 160px
+    display: -webkit-box
+    display: -webkit-flex
+    display: -ms-flexbox
+    display: flex
+    width: 50px
+    height: 50px
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+    -webkit-box-pack: center
+    -webkit-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+    background-color: #282828
+    border-radius: 50%
+    cursor: pointer
+
+  .graphic-slider--next svg, .graphic-slider--prev svg
+    width: 20px
+    fill: #fff
+
+  .graphic-slider--next
+    right: 0
+
+  .graphic-slider--prev
+    left: 0
+
+/* Web Work
 
 @media (max-width: 900px)
+  .work--lockup
+    .web-slider--item-image
+      width: 120px
+      height: 120px
 
-  .work
+    .web-slider--item-center .web-slider--item-image
+      width: 240px
+      height: 240px
 
-    &--lockup
-
-      .slider
-
-        &--item
-
-          &-image
-            width: 120px
-            height: 120px
-
-          &-center
-
-            .slider--item-image
-              width: 240px
-              height: 240px
-
-      .slider--next,
-      .slider--prev
-        top: 130px
+    .web-slider--next, .web-slider--prev
+      top: 130px
 
 @media (max-width: 767px)
+  .work--lockup
+    .web-slider
+      width: 75%
 
-  .work
+    .web-slider--item-image
+      width: 90px
+      height: 90px
 
-    &--lockup
+    .web-slider--item-center .web-slider--item-image
+      width: 190px
+      height: 190px
 
-      .slider
-        width: 75%
-
-        &--item
-
-          &-image
-            width: 90px
-            height: 90px
-
-          &-center
-
-            .slider--item-image
-              width: 190px
-              height: 190px
-
-      .slider--next,
-      .slider--prev
-        top: 105px
+    .web-slider--next, .web-slider--prev
+      top: 105px
 
 @media (max-width: 600px)
+  .work--lockup
+    .web-slider
+      width: auto
 
-  .work
+    .web-slider--item-left, .web-slider--item-right
+      display: none
 
-    &--lockup
+/* Graphic Work
 
-      .slider
-        width: auto
+@media (max-width: 900px)
+  .work--lockup
+    .graphic-slider--item-image
+      width: 120px
+      height: 120px
 
-        &--item
+    .graphic-slider--item-center .graphic-slider--item-image
+      width: 240px
+      height: 240px
 
-          &-left,
-          &-right
-            display: none
+    .graphic-slider--next, .graphic-slider--prev
+      top: 130px
+
+@media (max-width: 767px)
+  .work--lockup
+    .graphic-slider
+      width: 75%
+
+    .graphic-slider--item-image
+      width: 90px
+      height: 90px
+
+    .graphic-slider--item-center .graphic-slider--item-image
+      width: 190px
+      height: 190px
+
+    .graphic-slider--next, .graphic-slider--prev
+      top: 105px
+
+@media (max-width: 600px)
+  .work--lockup
+    .graphic-slider
+      width: auto
+
+    .graphic-slider--item-left, .graphic-slider--item-right
+      display: none
