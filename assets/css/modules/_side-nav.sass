@@ -1,32 +1,45 @@
 .side-nav
   position: relative
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
   display: flex
   width: 100px
   height: 70%
   max-height: 750px
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  -webkit-flex-direction: column
+  -ms-flex-direction: column
   flex-direction: column
+  -webkit-justify-content: space-around
+  -ms-flex-pack: distribute
   justify-content: space-around
   margin: 0
   padding: 0
   list-style-position: inside
   z-index: 10
 
-  & > li
+  > li
     position: relative
     top: -5px
-    color: $white
+    color: #fff
     font-size: 6px
     cursor: pointer
+    font-family: 'Roboto Slab', serif
+    font-weight: 700
 
     span
       position: relative
       top: 3px
       left: 10px
-      color: $white
+      color: #fff
       font-size: 14px
       font-weight: 300
       opacity: 0
       visibility: hidden
+      font-family: 'Roboto Slab', serif
+      font-weight: 700
 
     &::before
       position: absolute
@@ -36,30 +49,33 @@
       font-size: 14px
       font-weight: 300
 
-  li:nth-child(1)::before
-    content: "01"
+  li
+    &:nth-child(1)::before
+      content: "01"
 
-  li:nth-child(2)::before
-    content: "02"
+    &:nth-child(2)::before
+      content: "02"
 
-  li:nth-child(3)::before
-    content: "03"
+    &:nth-child(3)::before
+      content: "03"
 
-  li:nth-child(4)::before
-    content: "04"
+    &:nth-child(4)::before
+      content: "04"
 
-  li:nth-child(5)::before
-    content: "05"
+    &:nth-child(5)::before
+      content: "05"
 
-  li.is-active
-    color: $highlight
-    transition: color .4s ease-in-out
+    &.is-active
+      color: #8dd7f7
+      -webkit-transition: color .4s ease-in-out
+      transition: color 0.4s ease-in-out
 
-    span
-      opacity: 1
-      visibility: visible
-      transition: opacity .4s ease-in-out
+      span
+        opacity: 1
+        visibility: visible
+        -webkit-transition: opacity .4s ease-in-out
+        transition: opacity 0.4s ease-in-out
 
-    &::before
-      left: -33px
-      color: $white
+      &::before
+        left: -33px
+        color: #fff
