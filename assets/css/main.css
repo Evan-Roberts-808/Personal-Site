@@ -583,6 +583,8 @@
     }
   }
   
+/* Side Nav */
+
   .side-nav {
     position: relative;
     display: -webkit-box;
@@ -676,6 +678,8 @@
     color: #fff
   }
   
+/* Intro */
+
   .intro {
     position: relative;
     display: -webkit-box;
@@ -906,6 +910,8 @@
     }
   }
   
+/* Work */
+
   .work {
     position: relative;
     display: -webkit-box;
@@ -1307,6 +1313,8 @@
   }
 }
 
+/* About */
+
   .about {
     position: relative;
     display: -webkit-box;
@@ -1546,13 +1554,15 @@
     }
   }
   
+/* Contact */
+
   .contact {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-image: url("../img/contact-visual.png");
+    /* background-image: url("../img/");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat */
